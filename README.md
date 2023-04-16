@@ -1,5 +1,8 @@
 # tli-spawnselector
 
+#Preview
+![image](https://user-images.githubusercontent.com/52452769/232260062-a99faf0e-4967-4087-83c2-c03696a0a2e9.png)
+
 # Manual Installation
 This is the installation guide
 
@@ -38,4 +41,4 @@ RegisterNetEvent('qb-spawn:client:setupSpawns', function(cData, new, apps)
 end)
 ```
 
-If You Want The Locations To Not Be By Jobs Go To `fs-spawnselector/settings.lua` And Comment -- On The Jobs
+If You Want The Locations To Not Be By Jobs Go To `tli-spawnselector/settings.lua` And Comment -- On The Jobs
