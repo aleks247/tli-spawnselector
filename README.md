@@ -1,20 +1,9 @@
-# fs-spawnselector
+# tli-spawnselector
 
-Dont Not Replace qb-spawn with this ⚠⚠⚠⚠⚠
-
-```My Discord```
-- [Discord](https://discord.gg/6kJ5ubDEWE)
-
-
-*
-![showcase](https://cdn.discordapp.com/attachments/784243374269661195/990042002550829097/unknown.png)
-
-*
 # Manual Installation
-This Is How It Works. 
+This is the installation guide
 
-Ok Go To [qb-apartments/client/main.lua] Then Go To The Event `apartments:client:setupSpawnUI` And Replace It With This 
-
+Go To [qb-apartments/client/main.lua] Then Go To The Event `apartments:client:setupSpawnUI` And Replace It With This:
 ```
 RegisterNetEvent('apartments:client:setupSpawnUI', function(cData)
     QBCore.Functions.TriggerCallback('apartments:GetOwnedApartment', function(result)
@@ -34,14 +23,12 @@ RegisterNetEvent('apartments:client:setupSpawnUI', function(cData)
 end)
 ```
 
-*
-
-Then Go To [qb-spawn/client.lua] Then Go To The Event `qb-spawn:client:setupSpawns` And Replace It With This
+Then Go To [qb-spawn/client.lua] Then Go To The Event `qb-spawn:client:setupSpawns` And Replace It With This:
 
 ```
 RegisterNetEvent('qb-spawn:client:setupSpawns', function(cData, new, apps)
     if not new then
-         TriggerEvent('fs-spawnselector:set')
+         TriggerEvent('tli-spawnselector:set')
     elseif new then
         SendNUIMessage({
             action = "setupAppartements",
@@ -50,11 +37,5 @@ RegisterNetEvent('qb-spawn:client:setupSpawns', function(cData, new, apps)
     end
 end)
 ```
-*
-To Change The Logo Go To `interface.css` In Line 7
-*
-If You Want The Locations To Not Be By Jobs Go To `fs-spawnselector/settings.lua` And Comment -- On The Jobs
-*
-# Here Is The Original Fork
 
-[qb-spawnselector](https://github.com/arabcodingteam/qb-spawnselector)
+If You Want The Locations To Not Be By Jobs Go To `fs-spawnselector/settings.lua` And Comment -- On The Jobs
